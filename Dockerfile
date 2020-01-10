@@ -10,7 +10,7 @@ ENV git_conf_linux=git
 ENV user=userGit
 ENV password=passGit
 
-RUN apt-get update && apt-get install zsh git
+RUN apt-get update && apt-get install zsh git -y
 
 RUN git clone https://${user}:${password}@${git_conf_linux}
 
